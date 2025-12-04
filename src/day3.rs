@@ -263,7 +263,7 @@ unsafe fn part2_inner(input: &str) -> i64 {
                         break 'outer;
                     }
 
-                    mask1 = 0;
+                    // mask1 = 0;
                     mask2 = !(u64::MAX >> m2.leading_zeros());
 
                     m2 = b2e & mask2 & !tail_mask & !danger_mask;
