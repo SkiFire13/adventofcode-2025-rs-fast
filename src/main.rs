@@ -40,5 +40,5 @@ macro_rules! run {
 }
 
 fn main() {
-    run!(day8);
+    run!(day9);
 }
