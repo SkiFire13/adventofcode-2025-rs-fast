@@ -5,7 +5,7 @@ use adventofcode_2025_rs_fast::*;
 fn bench<D: std::fmt::Display>(mut f: impl FnMut() -> D) {
     // rayon::broadcast(|_| {});
 
-    const ITERS: u32 = 5_000;
+    const ITERS: u32 = 100_000;
     let n = if cfg!(debug_assertions) { 1 } else { ITERS };
     let now = std::time::Instant::now();
     for _ in 1..n {
@@ -40,5 +40,5 @@ macro_rules! run {
 }
 
 fn main() {
-    run!(day10);
+    run!(day11);
 }
