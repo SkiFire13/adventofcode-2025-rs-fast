@@ -35,10 +35,10 @@ macro_rules! run {
         bench(|| crate::$day::part1(input));
         run!(part2 $day bench(|| crate::$day::part2(input)));
     }};
-    (part2 day25 $($rest:tt)*) => {};
+    (part2 day12 $($rest:tt)*) => {};
     (part2 $day:ident $($rest:tt)*) => { $($rest)* };
 }
 
 fn main() {
-    run!(day11);
+    run!(day12);
 }
