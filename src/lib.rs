@@ -4,6 +4,7 @@
 #![feature(portable_simd)]
 #![feature(slice_ptr_get)]
 #![feature(array_ptr_get)]
+#![feature(likely_unlikely)]
 
 pub mod day1;
 pub mod day2;
